@@ -1,0 +1,335 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #001221;
+    display: flex;
+    flex-direction: column;
+    font-family: sans-serif;
+    font-size: 15px;
+}
+
+/*******************************************************
+/*LOGO HEADER*/
+.container-header {
+    background-image: url(../carpetas/multimedia/img/header/background-1.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    border-bottom: solid rgba(255, 255, 255, 0.671) 1px;
+}
+.logo {
+    display: flex;
+}
+.container-header img {
+    width: 70px;
+    margin: 10px;
+}
+.container-header p {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    
+    color: rgba(255, 255, 255, 0.884);
+    text-shadow: 0px 0px 1px black, 0px 0px 1px black, 
+    0px 0px 1px black, 0px 0px 1px black, 
+    0px 0px 1px black, 0px 0px 1px black;
+
+    font-size: 14px;
+    font-weight: bold;
+    margin: 10px;
+}
+.container-header span {
+    font-size: 24px;
+    font-weight: bold;
+    margin-left: -2px;
+}
+/*** MEDIA QUERIES LOGO ***/
+    @media screen and (max-width: 230px) {
+        .container-header img {
+            width: 60px;
+        }
+        .container-header p {
+            font-size: 10px;
+        }
+        .container-header span {
+            font-size: 18px;
+        }
+    }
+
+    
+/* MENU NAVEGACION HEADER */
+.container-header nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: start;
+    align-items: center;
+    margin-right: 5%;
+}
+.container-header nav a {
+    padding: 3px 9px;
+    margin: 4px 15px 10px;
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    font-weight: 400;
+    transition: all 850ms;
+}
+.container-header nav a:hover {
+    border-bottom: solid rgba(255, 255, 255, 0.705) 1px;
+    font-size: 18px;
+}
+    /*** MEDIA QUERIES MENU NAV ***/
+    @media screen and (max-width: 661px) {
+        .container-header nav {
+            margin: 0;
+            width: 100%;
+            background-color: #003372cb;
+            border-top: solid rgba(255, 255, 255, 0.705) 1px;
+        }
+        .container-header nav a {
+            margin: 10px 5px;
+            font-size: 14px;
+        }
+    }
+/***********************************************/
+
+.container-plantilla {
+    background-color: wheat;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+.plantilla {
+    background-color: #001d35;
+    width: 100%;
+}
+.formacion {
+    background-color: #001221;
+    width: 96%;
+    margin: 2%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    border: solid rgba(255, 255, 255, 0.336) 1px;
+}
+.formacion img {
+    width: 400px;
+    margin: 10px 0px;
+}
+
+.jugadores {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    width: 250px;
+}
+.perfil{
+    background-color: #d9dde00a;
+    width: 96%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: flex-end;
+    margin: 2% 2%;
+    border: solid rgba(255, 255, 255, 0.589) 1px;
+}
+.jugadores div img {
+    width: 75px;
+    padding-right: 5px;
+    border-right: solid rgba(255, 255, 255, 0.527) 1px;
+}
+.jugadores a {
+    margin-bottom: 35px;
+    margin-left: 10px;
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.589);
+    font-size: 12px;
+    font-weight: bold;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+    @media screen and (max-width: 970px) {
+        .formacion {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .jugadores {
+            width: 96%;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: flex-start;
+            align-items: flex-start;
+        }
+        .perfil {
+            width: 98%;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: flex-start;
+            align-items: center;
+        }
+        .formacion img {
+            width: 84%;
+        }
+    }
+
+
+/*** JUGADOR IZQUIERDA ***/
+.biografia {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#bio-izq {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 96%;
+}
+.foto-izq {
+    width: 100%;
+    background-color: #002754;
+    background-image: linear-gradient(270deg, #002754 7%, #002754 15%, #dedede 100%);
+    border: solid white 1px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+.img-bio img {
+    width: 175px;
+    margin: 15px 0px;
+    margin-right: -40px;
+    margin-left: 20px;
+
+}
+.descripcion-bio {
+    background-color: #0006128e;
+    background-image: linear-gradient(270deg, #0006122d 0%, #00346f21 100%);
+
+    border: solid black 1px;
+    width: 94%;
+    margin: 10px 10%;
+    padding: 1% 2%;
+    border-radius: 6px;
+}
+.descripcion-bio h3 {
+    color: rgba(255, 255, 255, 0.938);
+    text-shadow: 0px 0px 3px black, 0px 0px 3px black;
+}
+.descripcion-bio p {
+    margin: 10px 20px;
+    font-size: 15px;
+    font-weight: bold;
+    color: rgba(255, 255, 255, 0.911);
+    text-shadow: 0px 0px 3px black, 0px 0px 3px black;
+}
+.descripcion-bio span {
+    font-weight: 500;
+    font-size: 14px;
+    color: rgb(211, 207, 0);
+}
+    @media screen and (max-width: 600px) {
+        .foto-izq {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            border: solid rgba(0, 0, 0, 0.521) 2px;
+        }
+        .img-bio {
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+        }
+        .img-bio img {
+            margin-left: -45px;
+        }
+    }
+    @media screen and (max-width:250px) {
+        .img-bio img {
+            width: 125px;
+        }
+        .descripcion-bio {
+            font-size: 14px;
+        }
+        .descripcion-bio span {
+            font-size: 12px;
+        }
+    }
+
+
+/*** JUGADOR DERECHA ***/
+#bio-der {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 96%;
+}
+.foto-der {
+    width: 100%;
+    background-color: #002754;
+    background-image: linear-gradient(270deg, #002754 7%, #002754 15%, #dedede 100%);
+    border: solid white 1px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+.img-bio-der img {
+    width: 175px;
+    margin: 15px 0px;
+    margin-left: -40px;
+    margin-right: 20px;
+}
+@media screen and (max-width: 600px) {
+    .foto-der {
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+        border: solid rgba(0, 0, 0, 0.521) 2px;
+    }
+    .img-bio-der {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+    .img-bio-der img {
+        margin-right: -45px;
+    }
+}
+@media screen and (max-width:250px) {
+    .img-bio-der img {
+        width: 125px;
+    }
+    .descripcion-bio {
+        font-size: 14px;
+    }
+    .descripcion-bio span {
+        font-size: 12px;
+    }
+}

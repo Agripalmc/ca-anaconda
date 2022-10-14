@@ -1,0 +1,127 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #001221;
+    display: flex;
+    flex-direction: column;
+    font-family: sans-serif;
+    font-size: 15px;
+}
+
+/*******************************************************
+/*LOGO HEADER*/
+.container-header {
+    background-image: url(../carpetas/multimedia/img/header/background-1.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    border-bottom: solid rgba(255, 255, 255, 0.671) 1px;
+}
+.logo {
+    display: flex;
+}
+.container-header img {
+    width: 70px;
+    margin: 10px;
+}
+.container-header p {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    
+    color: rgba(255, 255, 255, 0.884);
+    text-shadow: 0px 0px 1px black, 0px 0px 1px black, 
+    0px 0px 1px black, 0px 0px 1px black, 
+    0px 0px 1px black, 0px 0px 1px black;
+
+    font-size: 14px;
+    font-weight: bold;
+    margin: 10px;
+}
+.container-header span {
+    font-size: 24px;
+    font-weight: bold;
+    margin-left: -2px;
+}
+/*** MEDIA QUERIES LOGO ***/
+    @media screen and (max-width: 230px) {
+        .container-header img {
+            width: 60px;
+        }
+        .container-header p {
+            font-size: 10px;
+        }
+        .container-header span {
+            font-size: 18px;
+        }
+    }
+
+    
+/* MENU NAVEGACION HEADER */
+.container-header nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: start;
+    align-items: center;
+    margin-right: 5%;
+}
+.container-header nav a {
+    padding: 3px 9px;
+    margin: 4px 15px 10px;
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    font-weight: 400;
+    transition: all 850ms;
+}
+.container-header nav a:hover {
+    border-bottom: solid rgba(255, 255, 255, 0.705) 1px;
+    font-size: 18px;
+}
+    /*** MEDIA QUERIES MENU NAV ***/
+    @media screen and (max-width: 661px) {
+        .container-header nav {
+            margin: 0;
+            width: 100%;
+            background-color: #003372cb;
+            border-top: solid rgba(255, 255, 255, 0.705) 1px;
+        }
+        .container-header nav a {
+            margin: 10px 5px;
+            font-size: 14px;
+        }
+    }
+/***********************************************/
+
+.container-videos-thebird {
+    background-color: bisque;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.vid {
+    width: 400px;
+    height: auto;
+    margin: 10px;
+    background-color: cadetblue;
+}
+.vid video {
+    width: 100%;
+}
+@media screen and (max-width: 1260px) {
+    .container-videos-thebird {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: start;
+        align-items: center;
+    }
+}
